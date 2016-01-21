@@ -28,7 +28,8 @@ git create-add hello-repo   # create hello-repo repository
 git push -u origin master   # push my repository to GitHub
 
 #################################### how to list repos
-curl https://api.github.com/users/ctrngk/repos | grep full_name
+#################################### curl -s to silence, rather than ignoring timing
+curl -s https://api.github.com/users/ctrngk/repos | grep full_name
 
 ################################### how to know more about github
 curl https://api.github.com/users/ctrngk
